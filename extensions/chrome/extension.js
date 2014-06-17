@@ -45,7 +45,7 @@
             }
         }
 
-        return segs.length ? '/' + segs.join('/') : null;
+        return segs.length ? '//' + segs.join('/') : null;
     };
 
     /**
@@ -71,6 +71,13 @@
                 delete e[k];
 
                 e[k] = elem;
+
+            /**
+             * also remove all complex object structures (but arrays) to avoid problems
+             * with circular references and socket transmission
+             */
+            } else if (typeof e[k] === 'object' && !(e[k] instanceof Array)) {
+                delete e[k];
             }
         }
 
