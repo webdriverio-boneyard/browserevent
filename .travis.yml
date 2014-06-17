@@ -4,6 +4,9 @@ node_js:
     - '0.11'
     - '0.10'
 
+addons:
+  sauce_connect: true
+
 env:
   global:
     - secure: uZdirMsq1Q533QlkX9Kw6Po8y/4rRs6XRgNjOhpJY6PMA7KpW71HpUG2SfcMPHmq5k6xClmTxVqhQ6BEp1fHHRp+0LRb+9SflCSLax0kRyzc2mD6qA2vH+A1dsyawpjngLR+a04R/JjQ83+35R9JuKPt2jagcUaEMKvzQGjiTwc=
