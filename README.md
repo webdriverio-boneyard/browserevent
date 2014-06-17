@@ -1,4 +1,4 @@
-Browserevent (only works with WebdriverJS > v2.0.0)
+Browserevent (only works with WebdriverJS > v2.0.0) [![Build Status](https://travis-ci.org/webdriverjs/browserevent.svg?branch=master)](https://travis-ci.org/webdriverjs/browserevent)
 ============
 
 This is an experimental feature that helps you to listen on events within the browser. It
@@ -48,3 +48,10 @@ client
 
 **Note:** this is still an experimental feature. Some events like `hover` will not be
 recorded by the browser. But events like `click`, `doubleClick` or custom events are working flawlessly.
+
+## Contributing
+Please fork, add specs, and send pull requests! In lieu of a formal styleguide, take care to
+maintain the existing coding style.
+
+## Release History
+* 2013-04-22   v0.1.0   ported feature from WebdriverIO project
