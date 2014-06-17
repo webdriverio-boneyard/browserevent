@@ -6,4 +6,4 @@
  * @license Licensed under the MIT license.
  */
 
-module.exports = process.env.WEBDRIVERCSS_COVERAGE === '1' ? require('./lib-cov/browserevent.js') : require('./lib/browserevent.js');
+module.exports = require('./lib/browserevent.js');
