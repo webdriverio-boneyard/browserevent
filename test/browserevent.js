@@ -1,6 +1,6 @@
 var assert = require('assert'),
-    webdriverjs = require('../../../DEV/index.js'),
-    browserevent = require('../../index.js'),
+    webdriverjs = require('../../DEV/index.js'),
+    browserevent = require('../index.js'),
     client;
 
 describe('test client side events', function() {
@@ -9,7 +9,9 @@ describe('test client side events', function() {
 
         client = webdriverjs.remote({
             desiredCapabilities: {
-                browserName: 'chrome'
+                browserName: 'chrome',
+                platform: 'OS X 10.6',
+                version: 35
             }
         });
 
@@ -22,14 +24,13 @@ describe('test client side events', function() {
         keyType = 'keyup',
         keyPressTestDone = false,
         keypressListenerTest = function(e) {
-            console.log('something haopppppend', e);
 
             // test event values
             assert.strictEqual(e.keyIdentifier, 'U+0054'); // U+0054 === 't'
             assert.strictEqual(e.type, keyType);
 
             client
-                .getValue('/' + e.target, function(err,res) {
+                .getValue(e.target, function(err,res) {
                     assert.strictEqual(res,keyCharacter);
                 })
                 // set flag to test if event was fired in L44
