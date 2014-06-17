@@ -8,6 +8,7 @@ describe('test client side events', function() {
     before(function(done) {
 
         client = webdriverjs.remote({
+            port: 4445,
             desiredCapabilities: {
                 browserName: 'chrome',
                 platform: 'OS X 10.6',
