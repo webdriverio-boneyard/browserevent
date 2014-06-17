@@ -26,4 +26,3 @@ node_modules
 
 # crx file and tmp folder
 extensions/tmp
-extensions/chrome.crx
