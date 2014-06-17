@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    webdriverjs = require('../../DEV/index.js'),
+    webdriverjs = require('webdriverjs'),
     browserevent = require('../index.js'),
     client;
 
