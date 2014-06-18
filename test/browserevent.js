@@ -11,10 +11,12 @@ describe('test client side events', function() {
             port: 4445,
             user: process.env.SAUCE_USERNAME,
             key: process.env.SAUCE_ACCESS_KEY,
+            logLevel: 'verbose',
             desiredCapabilities: {
                 browserName: 'chrome',
                 platform: 'OS X 10.6',
-                version: 35
+                version: 35,
+                name: 'BrowserEvent plugin test'
             }
         });
 
@@ -54,7 +56,7 @@ describe('test client side events', function() {
 
             // type key character - listener should be invoked
             .keys(keyCharacter)
-            .pause(1000)
+            .pause(3000)
 
             .call(function() {
                 // check if keypressListenerTest was executed and event was catched
