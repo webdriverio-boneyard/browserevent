@@ -1,4 +1,4 @@
-Browserevent (only works with WebdriverJS > v2.0.0) [![Build Status](https://travis-ci.org/webdriverjs/browserevent.svg?branch=master)](https://travis-ci.org/webdriverjs/browserevent)
+Browserevent (only works with WebdriverJS > v2.0.0) [![Build Status](https://travis-ci.org/webdriverio/browserevent.svg?branch=master)](https://travis-ci.org/webdriverio/browserevent)
 ============
 
 This is an experimental feature that helps you to listen on events within the browser. It
