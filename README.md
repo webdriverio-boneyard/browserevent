@@ -49,7 +49,7 @@ client
 **Note:** this is still an experimental feature. Some events like `hover` will not be recorded
 by the browser. But events like `click`, `doubleClick` or custom events are working flawlessly.
 You can also use this feature in cloud environments like [Sauce Labs](https://saucelabs.com)
-when using a secured tunnel that proxies the port `5555`. But be aware of possible delays due
+when using a secured tunnel that proxies the port `4321`. But be aware of possible delays due
 to slow connections between client and cloud server. Your click listener could outlast some
 selenium requests until it gets fired. I haven't faced this problem if the standalone server
 runs on my local machine.
