@@ -1,4 +1,4 @@
-Browserevent [![Build Status](https://travis-ci.org/webdriverio/browserevent.svg?branch=master)](https://travis-ci.org/webdriverio/browserevent)
+Browserevent
 ============
 
 This is an experimental feature that helps you to listen on events within the browser. It
@@ -18,7 +18,7 @@ $ npm install browserevent
 
 Then just require the module and enhance your client object.
 
-```
+```js
 var client = require('webdriverio').remote({ desiredCapabilities: { browserName: 'chrome' } }),
 	browserevent = require('browserevent');
 
@@ -60,3 +60,4 @@ maintain the existing coding style.
 
 ## Release History
 * 2013-04-22   v0.1.0   ported feature from WebdriverIO project
+* 2015-02-05   v0.2.0   fixed path to extension, break test if connection didn't get established

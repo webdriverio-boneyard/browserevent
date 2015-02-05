@@ -1,7 +1,7 @@
 {
   "name": "browserevent",
   "description": "Plugin for the WebdriverIO project to listen on client side browser events",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://webdriver.io",
   "author": "Christian Bromann <mail@christian-bromann.com>",
   "repository": {
