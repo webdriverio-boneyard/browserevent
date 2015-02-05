@@ -99,7 +99,7 @@
     /**
      * create socket connection and listen on event registration channel
      */
-    var socket = io.connect('http://0.0.0.0:4321');
+    var socket = io.connect('http://0.0.0.0:5555');
     socket.on('addEventListener', function(data) {
         socketData = data;
         var elem = document.querySelectorAll(data.elem);
