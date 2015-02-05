@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    webdriverjs = require('webdriverjs'),
+    webdriverio = require('webdriverio'),
     browserevent = require('../index.js'),
     client;
 
@@ -7,7 +7,7 @@ describe('test client side events', function() {
 
     before(function(done) {
 
-        client = webdriverjs.remote({
+        client = webdriverio.remote({
             port: 4445,
             user: process.env.SAUCE_USERNAME,
             key: process.env.SAUCE_ACCESS_KEY,
