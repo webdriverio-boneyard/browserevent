@@ -31,7 +31,7 @@
     "istanbul": "^0.2.6",
     "mocha": "~1.17.1",
     "should": "^3.3.2",
-    "webdriverjs": "https://github.com/camme/webdriverjs/tarball/v2.0.0"
+    "webdriverio": "^2.4.5"
   },
   "tags": [
     "webdriverio",
