@@ -1,6 +1,8 @@
 Browserevent
 ============
 
+__Note:__ Browserevent isn't yet compatible with WebdriverIO `v3.0`. We are currently working on it to make that happen soon. So stay tuned.
+
 This is an experimental feature that helps you to listen on events within the browser. It
 is currently **only** supported in Chrome browser (other browser will eventually follow).
 To register an event call the `addEventListener` command. If an event gets invoked it returns
